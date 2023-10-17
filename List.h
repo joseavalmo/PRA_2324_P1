@@ -11,7 +11,7 @@ class List {
 	   virtual T get(int pos);
 	   virtual int search(T e);
 	   virtual bool empty();
-	   virtual int size();
+	   virtual int size()t;
 };
 
 #endif
