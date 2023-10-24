@@ -12,10 +12,16 @@ class ListArray : public List<T> {
 	void resize(int new_size);
 
     public:
-    	ListArray();
-	~ListArray();
-	T operator[](int pos);
-	friend std::ostream& operator<<(std::ostream &out, const ListArray<T> &list);
+    	ListArray(){
+	}
+	~ListArray(){
+	}
+	T operator[](int pos){
+		return get(pos);
+	}
+	friend std::ostream& operator<<(std::ostream &out, const ListArray<T> &list){
+		return out;
+	}
 
 	void insert(int pos, T e) override{
 	}
@@ -23,14 +29,19 @@ class ListArray : public List<T> {
 	}
         void prepend(T e) override{
 	}
-        T remove(int pos) override {
+        T remove(int pos) override{
+		return 0;
 	}
         T get(int pos) override{
+		return 0;
 	}
         int search(T e) override{
+		return 0;
 	}
         bool empty() override{
+		return 0;
 	}
         int size() override{
+		return 0;
 	} 	
 };
